@@ -15,4 +15,3 @@ def get_es_client(max_retries: int = 5, sleep_time: int = 5) -> Elasticsearch:
             time.sleep(sleep_time)
             i += 1
     raise ConnectionError("Failed to connect to Elasticsearch after multiple attempts.")
-
